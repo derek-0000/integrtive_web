@@ -1,0 +1,11 @@
+.c-card{
+    display: grid;
+    grid-template-columns: auto 500px auto;
+}
+.c-card-data{
+    position: absolute;
+    border: 8px black solid;
+    border-radius: 30px;
+    width: 500px;
+    height: 1200px;
+}
