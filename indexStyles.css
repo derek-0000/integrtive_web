@@ -1,0 +1,43 @@
+html{
+    overflow: hidden;
+    font-family: 'Noto Sans JP', sans-serif !important; 
+    margin:0;
+    padding:0;
+    -webkit-font-smoothing: antialiased;}
+.c-background{
+    position: absolute;
+    margin:0;
+    padding:0;
+    width: 1920px;
+    height: 1080px;
+    background: linear-gradient(213.54deg, rgba(255, 184, 0, 0.62) 16.87%, rgba(0, 34, 68, 0.62) 75.23%), 
+    radial-gradient(96.07% 303.62% at 1.56% 100%, #DA2F2F 4.24%, rgba(255, 255, 255, 0) 100%)
+}
+.block-login{
+    position: relative;
+    background-color: #110000;
+    opacity: 1;
+    margin-right: auto;
+    margin-left: auto;
+    width: 1200px;
+    height: 800px;
+    box-shadow: 11px 12px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 7px;
+    justify-content: center;
+}
+.c-elements-login{
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    
+}
+.elements-login{
+    margin-top: 400px;
+    justify-content: center;
+    display: flex;
+}
+/* .c-background{
+    position: absolute;
+    margin:0;
+    padding:0;
+} */
