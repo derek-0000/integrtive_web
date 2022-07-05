@@ -1,0 +1,30 @@
+.image{
+    margin: 10px;
+    text-align: center;
+}
+.student-pic{
+    border-radius: 9px;
+
+}
+.background{
+    background-color: white;
+    border-radius: 18px;
+    border: black solid 4px;
+}
+.elements-container{
+    margin: 20px;
+}
+.card-element{
+    font-size: 20px;
+    font-weight: bold;
+}
+.c-barcode{
+    font-size: 20px;
+    text-align: center;
+}
+.barcode{
+    text-align: center;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+}

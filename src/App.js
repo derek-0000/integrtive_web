@@ -1,22 +1,23 @@
 import React from 'react'
-import Sidebar from './components/Sidebar';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import './App.css';
-import UserProfile from './pages/UserProfile';
 import UserAtendance from './pages/UserAtendance';
 import UserID from './pages/UserID';
+import Profile from './pages/Profile';
+import ProfessorProfile from './pages/ProfessorProfile';
+import mainLogin from './pages/Login';
 
 function App() {
   return (
     <Router>
-      <Sidebar />
       <Routes>
-        <Route path='/' element= {<UserID/>}/>
-        <Route path='/profile' element= {<UserProfile/>}/>
+        <Route path='/' element={<mainLogin/>}/> 
+        <Route path='/user' element={<UserID/>}/> 
+        <Route path='/profile' element= {<Profile/>}/>
         <Route path='/atendance' element={<UserAtendance/>}/>
+        <Route path='/prof' element={<ProfessorProfile/>}/>
       </Routes>
     </Router>
-
   );
 }
 

@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import { Link } from 'react-router-dom'
 import * as VscIcons from "react-icons/vsc";
-import { SidebarData } from './SideData';
+import { SidebarData } from './data/SideData';
 import './Sidebar.css'
 import { IconContext } from 'react-icons'
 

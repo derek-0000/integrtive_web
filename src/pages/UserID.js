@@ -1,12 +1,16 @@
 import React from 'react'
+import Id from '../components/Id';
+import Sidebar from '../components/Sidebar';
 
 function UserID() {
-  console.log('im here')
 
   return (
-    <div className='studentID'><h1>ID</h1></div>
-    
-
+    <div>
+      <Sidebar/>
+      <div className='studentID'>
+        <Id></Id>
+      </div>
+    </div>
   )
 }
 

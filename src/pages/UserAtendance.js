@@ -1,8 +1,12 @@
 import React from 'react'
+import Sidebar from '../components/Sidebar'
 
 function UserAtendance() {
   return (
-    <h1 className='atendance'>atendance</h1>
+    <div>
+      <Sidebar/>
+      <h1 className='atendance'>atendance</h1>
+    </div>
   )
 }
 
