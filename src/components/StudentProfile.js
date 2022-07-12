@@ -7,7 +7,7 @@ function StudentProfile() {
     <>
     <div className='c-profile'>
       <div className='c-image'>
-        <img className='user-pictue' src='https://pbs.twimg.com/profile_images/1477216165776994306/y-bgBXbD_400x400.jpg' width='300px'></img>
+        <img className='user-picture' src='https://pbs.twimg.com/profile_images/1477216165776994306/y-bgBXbD_400x400.jpg' width='300px'></img>
       </div>
 
       { TextFields.map((item, index) => {

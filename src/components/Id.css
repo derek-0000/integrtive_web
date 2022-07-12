@@ -1,6 +1,7 @@
 .image{
     margin: 10px;
     text-align: center;
+    border: none;
 }
 .student-pic{
     border-radius: 9px;

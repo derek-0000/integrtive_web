@@ -1,4 +1,4 @@
-html{
+html #login{
     color: white;
     position: fixed;
     width: 100%;
@@ -23,7 +23,7 @@ html{
         left: 90px;
     }
 }
-ody,html{
+body,html{
     overflow: hidden;
     font-family: 'Noto Sans JP', sans-serif !important; 
     margin:0;
@@ -109,7 +109,7 @@ ody,html{
     transform: translateY(-30px);
 }
 /* Button styles */
-#login{
+#loginButton{
     color: #090909;
     padding: 10px 250px;
     font-size: 18px;

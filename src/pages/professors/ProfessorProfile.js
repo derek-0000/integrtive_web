@@ -1,11 +1,11 @@
 import React from 'react'
-import ProffesorProfile from '../components/ProfessorProfile'
-import Sidebar from '../components/Sidebar'
+import ProffesorProfile from '../../components/ProfessorProfile'
+import SidebarProfessors from '../../components/SidebarProfessors'
 
 function ProfessorProfile() {
   return (
     <div>
-      <Sidebar/>
+      <SidebarProfessors/>
       <div className='prof'>
           <ProffesorProfile/>
       </div>

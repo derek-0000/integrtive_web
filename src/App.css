@@ -6,7 +6,7 @@
   padding: 0;
   font-family: 'Noto Sans', sans-serif;;
 }
-.studentID, .profile, .atendance, .prof{
+.studentID, .profile, .atendance, .professor-main, .professor-profile, .prof{
   display: flex;
   align-items: center;
   justify-content: center;

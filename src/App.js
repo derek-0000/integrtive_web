@@ -1,11 +1,12 @@
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import './App.css';
-import UserAtendance from './pages/UserAtendance';
-import UserID from './pages/UserID';
-import Profile from './pages/Profile';
-import ProfessorProfile from './pages/ProfessorProfile';
 import PageLogin from './pages/PageLogin';
+import UserAtendance from './pages/students/UserAtendance';
+import UserID from './pages/students/UserID';
+import Profile from './pages/students/Profile';
+import ProfessorProfile from './pages/professors/ProfessorProfile';
+import ProfessorMainPage from './pages/professors/ProfessorMainPage';
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
         <Route path='/user' element={<UserID/>}/> 
         <Route path='/profile' element= {<Profile/>}/>
         <Route path='/atendance' element={<UserAtendance/>}/>
-        <Route path='/prof' element={<ProfessorProfile/>}/>
+        <Route path='/professor-profile' element={<ProfessorProfile/>}/>
+        <Route path='/professor-main' element={<ProfessorMainPage/>}/>
       </Routes>
     </Router>
   );

@@ -1,6 +1,6 @@
 import React from 'react'
-import Id from '../components/Id';
-import Sidebar from '../components/Sidebar';
+import Id from '../../components/Id';
+import Sidebar from '../../components/Sidebar';
 
 function UserID() {
 

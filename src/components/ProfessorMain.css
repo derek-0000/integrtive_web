@@ -1,0 +1,24 @@
+
+.groups{
+    margin-top: 50px;
+    display: grid;
+    row-gap: 40px;
+    column-gap: 40px;
+    grid-template-columns: auto auto auto;    
+    color: white;
+    font-weight: bold;
+}
+
+.top{
+    padding: 100px 150px 100px 150px;
+    background: linear-gradient(213.54deg, rgba(255, 184, 0, 0.62) 16.87%, rgba(0, 34, 68, 0.62) 75.23%), 
+    radial-gradient(96.07% 303.62% at 1.56% 100%, #DA2F2F 4.24%, rgba(255, 255, 255, 0) 100%);
+    border-radius: 9px;
+}
+.bottom{
+    padding: 100px 150px 100px 150px;
+    background: linear-gradient(213.54deg, rgba(255, 184, 0, 0.62) 16.87%, rgba(0, 34, 68, 0.62) 75.23%), 
+    radial-gradient(96.07% 303.62% at 1.56% 100%, #DA2F2F 4.24%, rgba(255, 255, 255, 0) 100%);
+    border-radius: 9px;
+
+}

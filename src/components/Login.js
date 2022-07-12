@@ -5,7 +5,7 @@ const logo = "< scaN'go >";
 
 function Login() {
   return (
-    <html>
+    <html id="login">
       <div className="c-black-container">
         <div class="c-logo">
           <div className="c-elements">
@@ -36,7 +36,7 @@ function Login() {
                 </div>
               </div>
               <div class="c-login-button">
-                <a id="login" href="mainStudents.html">
+                <a id="loginButton" href="/user">
                   Login
                 </a>
               </div>
