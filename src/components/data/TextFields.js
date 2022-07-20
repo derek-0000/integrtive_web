@@ -1,35 +1,44 @@
 import React from 'react'
+import Cookies from 'universal-cookie'
+const cookies = new Cookies();
+const data = cookies.getAll()
 
 export const TextFields=[
     {
         containerClassName:'txt-name c-txt-field',
         className:'name txt-field',
-        label:'Name'
+        label:'Name',
+        data:`${data.first_name}`
     },
     {
         containerClassName:'txt-name c-txt-field',
         className:'lastname txt-field',
-        label:'Last Name'
+        label:'Last Name',
+        data:`${data.last_names}`
     },
     {
         containerClassName:'txt-id c-txt-field',
         className:'id txt-field',
-        label:'ID'
+        label:'ID',
+        data:`${data.id}`
     },
     {
         containerClassName:'txt-group c-txt-field',
         className:'group txt-field',
-        label:'Group'
+        label:'Group',
+        data:`${data.id + "addgroup"}`
     },
     {
         containerClassName:'txt-carrer c-txt-field',
         className:'carrer txt-field',
-        label:'Carrer'
+        label:'Carrer',
+        data:`${data.carrer}`
     },
     {
         containerClassName:'txt-email c-txt-field',
         className:'email txt-field',
-        label:'E-mail'
+        label:'E-mail',
+        data:`${data.email}`
     },
 ]
 {/* <div className='c-image'>

@@ -54,3 +54,10 @@
 span{
     margin-left: 16px;
 }
+.signout{
+    text-decoration: none;
+    color: white;
+    font-size: 19px;
+    align-items: center;
+    border-radius: 9px;
+}

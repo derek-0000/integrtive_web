@@ -1,3 +1,4 @@
+
 .c-profile{
     margin-left: auto;
     margin-right: auto;
@@ -14,6 +15,7 @@
     border: 0;
     border-bottom: 2px black solid;
     font-weight: bold;
+    letter-spacing: 1px;
 }
 input{
     all: unset;

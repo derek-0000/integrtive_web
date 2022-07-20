@@ -19,5 +19,11 @@ export const SidebarData=[
         path:'/atendance',
         icon:<VscIcons.VscChecklist/>,
         className:'nav-text'
-    },
+    }
+    // {
+    //     title:'Signout',
+    //     path:'/',
+    //     icon:<VscIcons.VscSignOut/>,
+    //     className:'nav-text'
+    // },
 ]

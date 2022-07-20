@@ -1,0 +1,126 @@
+#html, #bodyLogin{
+    color: white;
+    margin: 0%;
+    height: 100%;
+    overflow: hidden;
+    letter-spacing: 1px;
+}
+#bodyLogin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(213.54deg, rgba(255, 184, 0, 0.62) 16.87%, rgba(0, 34, 68, 0.62) 75.23%), 
+    radial-gradient(96.07% 303.62% at 1.56% 100%, #DA2F2F 4.24%, rgba(255, 255, 255, 0) 100%);
+}
+.c-login{
+    background-color: #110000;
+    display: flex;
+    justify-content: center;
+    border-radius: 9px;
+    box-shadow: 11px 12px 10px rgba(0, 0, 0, 0.25);
+    position: absolute;
+}
+.c-login-elements{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 20%;
+}
+.c-mini-elements{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+}
+.left-login-elements, .right-login-elements{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+.logo{
+    font-size: 50px;
+    letter-spacing: 5px;
+    font-weight: bold;
+}
+.welcome{
+    font-weight: bold;
+    font-size: 20px;
+}
+.userid, .password{
+    border-bottom: 1px #fff solid;
+    margin: 50px 50px 0 50px;
+}
+.userid::placeholder, .password::placeholder{
+    color: #ffffff;
+}
+.loginButton{
+    text-decoration: none;
+    color: #110000;
+    font-weight: bold;
+    background-color: #ffffff;
+    border-radius: 9px;
+    width: 80%;
+    text-align: center;
+    margin: 0 50px 50px 50px;
+
+}
+.forgot{
+    font-size: 13px;
+}
+.c-checkbox{
+    display: block;
+    position: relative;
+    margin: 40px;
+    margin-left: 0%;
+}
+.c-checkbox label{
+    color: rgb(255, 255, 255);
+    margin-left: 45px;
+    font-size: 13px;
+}
+.c-checkbox input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 7px;
+}
+.c-checkbox:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+.c-checkbox input:checked ~ .checkmark {
+    background-color: #f0c352;
+}
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.c-checkbox input:checked ~ .checkmark:after {
+    display: block;
+} */
+/* Style the checkmark/indicator */
+.c-checkbox .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}

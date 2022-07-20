@@ -13,7 +13,7 @@ function StudentProfile() {
       { TextFields.map((item, index) => {
         return(
         <div key={index} className={item.containerClassName}>
-            <input id={index} className={item.className} placeholder={item.label}/>
+            <div id={index} className={item.className} placeholder={item.label}>{item.data}</div> 
         </div>
         )
       })},
