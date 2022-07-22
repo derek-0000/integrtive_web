@@ -46,7 +46,6 @@ function Sidebar() {
                 </>
               );
             })}{" "}
-            ;
             <li className="signout"  onClick={()=>Signout()}>
               <Link to="/">
                 <VscIcons.VscSignOut />

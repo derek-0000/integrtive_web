@@ -34,7 +34,7 @@ function SidebarProfessors() {
                             </Link>
                         </li>
                     );
-                })} ;
+                })} 
             </ul>
         </nav>
         </IconContext.Provider>

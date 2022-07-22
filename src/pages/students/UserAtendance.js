@@ -1,11 +1,14 @@
 import React from 'react'
 import Sidebar from '../../components/Sidebar'
+import StudentAtendance from '../../components/StudentAtendance'
 
 function UserAtendance() {
   return (
     <div>
       <Sidebar/>
-      <h1 className='atendance'>atendance</h1>
+      <div className='studentID'>
+        <StudentAtendance></StudentAtendance>
+      </div>
     </div>
   )
 }

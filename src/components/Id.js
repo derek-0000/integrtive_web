@@ -8,7 +8,6 @@ const cookies = new Cookies();
 const data = cookies.getAll()
 
 export default function Id() {
-  console.log(data.fist_name)
   return (
     <>
     <div className='background'>

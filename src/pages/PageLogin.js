@@ -4,7 +4,8 @@ import Cookies from 'universal-cookie'
 import './Login.css'
 
 
-const URL = 'https://intregrative-api.herokuapp.com/student'
+const profURL = 'https://intregrative-api.herokuapp.com/professor'
+const studURL = 'https://intregrative-api.herokuapp.com/student'
 const cookies = new Cookies();
 const logo = "< scaN'go >";
 
@@ -12,26 +13,35 @@ class PageLogin extends Component {
 
   login = async() =>{
     try{
-        const request = await fetch (`${URL}/${this.state.form.id}/`);
+        const request = await fetch (`${studURL}/${this.state.form.id}/`);
         const response = await request.json();
-        console.log(response)
-        if(response.password= this.state.form.password){
+        if((response.password= this.state.form.password) && (response.is_student = true)){
             cookies.set('id', response.id,{path:'/'})
             cookies.set('carrer', response.carrer,{path:'/'})
             cookies.set('email', response.email,{path:'/'})
             cookies.set('first_name', response.first_name,{path:'/'})
             cookies.set('last_names', response.last_names,{path:'/'})
-            console.log("Correct info")
             window.location.href="./user";
         }else{
-            this.state.form.id = ''
-            this.state.form.password = ''
-            console.log(this.state.form.id)
-            console.log(this.state.form.password)
+          this.state.form.password = ''
         }
     }catch(err){
-        console.log(err)
-        throw new Error(err);
+        try{
+          const request = await fetch (`${profURL}/${this.state.form.id}/`);
+          const response = await request.json();
+          if((response.password= this.state.form.password)){
+            cookies.set('id', response.id,{path:'/'})
+            cookies.set('email', response.email,{path:'/'})
+            cookies.set('first_name', response.first_name,{path:'/'})
+            cookies.set('last_names', response.last_names,{path:'/'})
+            window.location.href="./professor-profile";
+          }else{
+            this.state.form.password = ''
+          }
+        }catch(err){
+          console.log(err)
+          throw new Error(err);
+        }
     }
 }
 
@@ -60,8 +70,7 @@ componentDidMount(){
 
   render(){
     return (
-
-      <div id="html">
+      <div className="html">
       <div className='bodyLogin'>
         <div className="c-login">
           <div className="c-login-elements">
@@ -91,7 +100,6 @@ componentDidMount(){
         </div>
       </div>
     </div>
-
     ) 
   }
 }
