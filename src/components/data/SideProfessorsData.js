@@ -3,7 +3,7 @@ import * as VscIcons from "react-icons/vsc";
 
 export const ProfessorsSidebarData=[
     {
-        title:'Gropus',
+        title:'Groups',
         path:'/professor-main',
         icon:<VscIcons.VscLibrary/>,
         className:'nav-text'

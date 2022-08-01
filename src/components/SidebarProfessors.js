@@ -4,6 +4,15 @@ import * as VscIcons from "react-icons/vsc";
 import './SidebarProfessors.css'
 import { ProfessorsSidebarData } from './data/SideProfessorsData';
 import { IconContext } from 'react-icons'
+import Cookies from "universal-cookie";
+const cookies = new Cookies();
+
+function Signout() {
+  cookies.remove("id", { path: "/" });
+  cookies.remove("email", { path: "/" });
+  cookies.remove("first_name", { path: "/" });
+  cookies.remove("last_names", { path: "/" });
+}
 
 function SidebarProfessors() {
     const[sidebar, setSidebar] = useState(false);
@@ -35,6 +44,12 @@ function SidebarProfessors() {
                         </li>
                     );
                 })} 
+                <li className="signout"  onClick={()=>Signout()}>
+              <Link to="/">
+                <VscIcons.VscSignOut />
+                <span>Signout</span>
+              </Link>
+            </li>
             </ul>
         </nav>
         </IconContext.Provider>
