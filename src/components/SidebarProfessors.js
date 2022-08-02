@@ -36,7 +36,7 @@ function SidebarProfessors() {
                 </li>  
                 {ProfessorsSidebarData.map((item, index) => {
                     return(
-                        <li key={index} className={item.className}>
+                        <li key={index} className={item.className} onClick={item.className =='nav-text signout' ? ()=>Signout() : null}>
                             <Link to={item.path}>
                                 {item.icon}
                                 <span>{item.title}</span>
@@ -44,12 +44,6 @@ function SidebarProfessors() {
                         </li>
                     );
                 })} 
-                <li className="signout"  onClick={()=>Signout()}>
-              <Link to="/">
-                <VscIcons.VscSignOut />
-                <span>Signout</span>
-              </Link>
-            </li>
             </ul>
         </nav>
         </IconContext.Provider>

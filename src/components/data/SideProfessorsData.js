@@ -13,5 +13,11 @@ export const ProfessorsSidebarData=[
         path:'/professor-profile',
         icon:<VscIcons.VscPerson/>,
         className:'nav-text'
-    }
+    },
+    {
+        title:'Signout',
+        path:'/',
+        icon:<VscIcons.VscSignOut/>,
+        className:'nav-text signout'
+    },
 ]

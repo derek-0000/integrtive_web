@@ -44,14 +44,12 @@ class PageLogin extends Component {
         }
     }
 }
-
 state={
     form:{
         id:'',
         password:''
     }
 }
-
 handleChange = async e =>{
     await this.setState({
         form:{
@@ -61,13 +59,11 @@ handleChange = async e =>{
     });
     console.log(this.state.form);
 }
-
 componentDidMount(){
     if(cookies.get('id')){
         window.location.href="./user";
     }
 }
-
   render(){
     return (
       <div className="html">

@@ -53,11 +53,15 @@
 }
 span{
     margin-left: 16px;
+    color: white;
 }
-.signout{
+a{
     text-decoration: none;
     color: white;
     font-size: 19px;
     align-items: center;
+    list-style: none;
     border-radius: 9px;
+    margin: 10px;
+
 }

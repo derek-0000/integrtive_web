@@ -8,11 +8,11 @@ import Cookies from "universal-cookie";
 const cookies = new Cookies();
 
 function Signout() {
-  cookies.remove("id", { path: "/" });
-  cookies.remove("carrer", { path: "/" });
-  cookies.remove("email", { path: "/" });
-  cookies.remove("first_name", { path: "/" });
-  cookies.remove("last_names", { path: "/" });
+    cookies.remove("id", { path: "/" });
+    cookies.remove("carrer", { path: "/" });
+    cookies.remove("email", { path: "/" });
+    cookies.remove("first_name", { path: "/" });
+    cookies.remove("last_names", { path: "/" });
 }
 function Sidebar() {
   const [sidebar, setSidebar] = useState(false);
@@ -37,7 +37,7 @@ function Sidebar() {
             {SidebarData.map((item, index) => {
               return (
                 <>
-                  <li key={index} className={item.className}>
+                  <li key={index} className={item.className} onClick={item.className =='nav-text signout' ? ()=>Signout() : null}>
                     <Link to={item.path}>
                       {item.icon}
                       <span>{item.title}</span>
@@ -46,12 +46,6 @@ function Sidebar() {
                 </>
               );
             })}{" "}
-            <li className="signout"  onClick={()=>Signout()}>
-              <Link to="/">
-                <VscIcons.VscSignOut />
-                <span>Signout</span>
-              </Link>
-            </li>
           </ul>
         </nav>
       </IconContext.Provider>
