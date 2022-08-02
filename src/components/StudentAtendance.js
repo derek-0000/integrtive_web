@@ -50,23 +50,28 @@ class StudentAtendance extends Component {
         <div className="c-grid">
           <div className="grid">
             {this.state.dates.map((date) => {
-              let i = date.atendance ? 1 : 0;
+              let i = date.atendance ? "did" : "did not";
+              let o = date.atendance ? 1 : 0;
               var shortDate = `${date.date}`.substring(0, 10);
               return (
                 <>
-                  <div className="date grid-element">{shortDate}</div>
-                  <div className="atendance grid-element">{i}</div>
+                  <div className="main-grid-elements">
+                    <div className="date grid-element short-date">
+                      {shortDate} : :  {o}
+                    </div>
+                    <div className="atendance grid-element">{`The student ${i} check in.`}</div>
+                  </div>
                 </>
               );
             })}
-            <div className="date grid-element">Total atendances</div>
-            <div className="atendance grid-element">{this.state.positiveDates.length}</div>
+            <div className="second-grid-elements">
+              <div className="date grid-element">Total atendances: {this.state.positiveDates.length}</div>
+            </div>
           </div>
         </div>
       </div>
     );
+  }
 }
-}
-
 
 export default StudentAtendance;

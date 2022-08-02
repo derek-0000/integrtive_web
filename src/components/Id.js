@@ -19,17 +19,16 @@ class Id extends Component{
     <>
     <div className='background'>
         <div className='elements-container'>
-            <div className='card-element'>{data.first_name + " " + data.last_names}</div>
-            {/* <div className='image'>                    
-                <img src="https://pbs.twimg.com/media/FTxn1pEWUAIPiO4?format=png&name=small" alt="logo" width="300px" className='student-pic'/>
-            </div> */}
+            <div className='image'>                    
+                <img src='photo-1511367461989-f85a21fda167.png' alt="pfp" width="300px" className='student-pic'/>
+            </div>
+            <div className='card-element first_name'>{data.first_name + " " + data.last_names}</div>
             <div className='card-element'>{data.carrer}</div>
             <div className='card-element'>{data.email}</div>
             <div className='card-element'>{data.id}</div>
             <div className='c-barcode'>
                 <Barcode className='barcode' value={data.id} />
             </div>
-            {/* <div className='barcode'>||||||||||||</div */}
         </div>
     </div>
     </>

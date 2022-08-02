@@ -31,23 +31,14 @@ render(){
           <>
             <div className='groups'>
               <Link to = {`/group/${group.name}`}>
-                <div className="top">{group.name}</div>
+                <div className="top"><h3>{group.name}</h3></div>
               </Link>
             </div>
           </>
         );
       })}
     </>
-    // <div className='c-groups-grid'>
-    //   <div className='groups'>
-    //     <div className='group-element top'>TIDBIS51M</div>
-    //     <div className='group-element top'>TIDBIS51M</div>
-    //     <div className='group-element top'>TIDBIS51M</div>
-    //     <div className='group-element bottom'>TIDBIS51M</div>
-    //     <div className='group-element bottom'>TIDBIS51M</div>
-    //     <div className='group-element bottom'>TIDBIS51M</div>
-    //   </div>
-    // </div>
+
   )
 }
 }

@@ -1,23 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
 
 .groups{
     margin-top: 50px;
     display: flex;
     color: white;
-    font-weight: bold;
+    letter-spacing: 2px;
 }
 
 .top{
-    padding: 50px 75px 50px 75px;
+    transition: 400ms;
+    position: relative;
+    width: 230px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(3155deg,#ffec61,#f321d7);
+    /* background: linear-gradient(213.54deg, rgba(255, 184, 0, 0.62) 16.87%, rgba(0, 34, 68, 0.62) 75.23%), 
+    radial-gradient(96.07% 303.62% at 1.56% 100%, #DA2F2F 4.24%, rgba(255, 255, 255, 0) 100%); */
     margin: 10px;
-    background: linear-gradient(213.54deg, rgba(255, 184, 0, 0.62) 16.87%, rgba(0, 34, 68, 0.62) 75.23%), 
-    radial-gradient(96.07% 303.62% at 1.56% 100%, #DA2F2F 4.24%, rgba(255, 255, 255, 0) 100%);
-    border-radius: 9px;
-}
-.bottom{
-    margin: 10px;
-    padding: 50px 75px 50px 75px;
-    background: linear-gradient(213.54deg, rgba(255, 184, 0, 0.62) 16.87%, rgba(0, 34, 68, 0.62) 75.23%), 
-    radial-gradient(96.07% 303.62% at 1.56% 100%, #DA2F2F 4.24%, rgba(255, 255, 255, 0) 100%);
-    border-radius: 9px;
 
+}
+.top::before{
+    content: '';
+    position: absolute;
+    width: 110%;
+    height: 100%;
+    background: linear-gradient(3155deg,#ffec61,#f321d7);
+    /* background: linear-gradient(213.54deg, rgba(255, 184, 0, 0.62) 16.87%, rgba(0, 34, 68, 0.62) 75.23%), 
+    radial-gradient(96.07% 303.62% at 1.56% 100%, #DA2F2F 4.24%, rgba(255, 255, 255, 0) 100%); */
+    filter: blur(30px) ;
+    transform: translateY(10px) translateX(20px);
+}
+.top:hover{
+    transition: 400ms;
+    border-radius: 30px;
+}
+h3{
+    position: relative;
+    color: white;
+    font-weight: 500;
 }

@@ -4,21 +4,42 @@
     border: none;
 }
 .student-pic{
-    border-radius: 9px;
+    border-radius: 100%;
 
 }
 .background{
+    position: relative;
     background-color: white;
     border-radius: 18px;
-    border: black solid 2px;
+    box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, .30);
 }
+.background::before{
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 110%;
+    height: 100%;
+    background: linear-gradient(3155deg,#ffec61,#f321d7);
+    /* background: linear-gradient(213.54deg, rgba(255, 184, 0, 0.62) 16.87%, rgba(0, 34, 68, 0.62) 75.23%), 
+    radial-gradient(96.07% 303.62% at 1.56% 100%, #DA2F2F 4.24%, rgba(255, 255, 255, 0) 100%); */
+    filter: blur(30px) ;
+    transform: translateY(10px) translateX(20px);
+}
+
 .elements-container{
+    transition: 300ms;
     margin: 20px;
     color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.elements-container:hover{
+    transition: 300ms;
+    margin: 30px;
 }
 .card-element{
-    font-size: 15px;
-    font-weight: bold;
+    font-size: 16px;
 }
 .c-barcode{
     font-size: 15px;
@@ -30,4 +51,8 @@
     justify-content: center;
     align-self: center;
     align-items: center;
+}
+.first_name{
+    font-size: 16px;
+    font-weight: bold;
 }

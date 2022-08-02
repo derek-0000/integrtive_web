@@ -14,8 +14,10 @@ html{
     letter-spacing: 1px;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(213.54deg, rgba(255, 184, 0, 0.62) 16.87%, rgba(0, 34, 68, 0.62) 75.23%), 
-    radial-gradient(96.07% 303.62% at 1.56% 100%, #DA2F2F 4.24%, rgba(255, 255, 255, 0) 100%); 
+    background: linear-gradient(3155deg,#ffec61,#f321d7);
+
+    /* background: linear-gradient(213.54deg, rgba(255, 184, 0, 0.62) 16.87%, rgba(0, 34, 68, 0.62) 75.23%), 
+    radial-gradient(96.07% 303.62% at 1.56% 100%, #DA2F2F 4.24%, rgba(255, 255, 255, 0) 100%);  */
 
     
 }
@@ -25,7 +27,7 @@ html{
     justify-content: center;
     border-radius: 9px;
     box-shadow: 11px 12px 10px rgba(0, 0, 0, 0.25);
-    margin: 2%;
+    margin: 9%;
 }
 .c-login-elements{
     display: flex;
@@ -65,14 +67,20 @@ html{
     color: #ffffff;
 }
 .loginButton{
+    transition: 500ms;
     text-decoration: none;
     color: #110000;
     font-weight: bold;
-    background-color: #ffffff;
+    background: linear-gradient(3155deg,#ffec61,#f321d7);
     border-radius: 9px;
     width: 80%;
     text-align: center;
-    margin: 0 50px 50px 50px;
+    padding: 5px 25px 5px 25px;
+}
+.loginButton:hover{
+    transition: 1000ms;
+    background: linear-gradient(3155deg,#61ffb5,#f39821);
+    border-radius: 19px;
 
 }
 .forgot{
