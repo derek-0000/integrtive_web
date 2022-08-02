@@ -1,0 +1,9 @@
+.names{
+    display: flex;
+    justify-content: center;
+    color:black
+}
+.table{
+    display: flex;
+    justify-content: center;
+}
