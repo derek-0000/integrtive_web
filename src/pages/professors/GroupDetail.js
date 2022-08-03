@@ -59,9 +59,7 @@ const GroupDetail = () => {
         })}
         {atendances.map((asist)=>{
           return(
-            <>
             <div className="names">{asist}</div>
-            </>
           )
         })}
        </div>
