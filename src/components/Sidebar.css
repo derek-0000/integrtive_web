@@ -1,4 +1,5 @@
 .navbar{
+    
     filter: invert(1);
     display: flex;
 }

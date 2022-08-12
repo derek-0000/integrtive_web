@@ -28,13 +28,11 @@ render(){
     <>
       {this.state.groups.map((group) => {
         return (
-          <>
             <div className='groups'>
               <Link to = {`/group/${group.name}`}>
                 <div className="top"><h3>{group.name}</h3></div>
               </Link>
             </div>
-          </>
         );
       })}
     </>

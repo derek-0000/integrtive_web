@@ -1,0 +1,43 @@
+@keyframes colorchange {
+    0%{color: black;}
+    100%{color: #f321d7;}
+}
+.main{
+    color: black;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.dateIndicator{
+    width: 30px;
+    height: 30px;
+
+}
+.dateIndicator::placeholder{
+    text-align: center;
+    color: black;
+}
+.dateIndicator:focus::placeholder{ 
+    color: white ;
+}
+.c-data{
+    margin: 10px;
+    padding: 5px;
+    box-shadow: 0px 11px 12px 0px rgba(0, 0, 0, .20);
+    border-radius: 10px;
+}
+.button{
+    border-radius: 10px;
+    width: 30px;
+    height: 30px;
+}
+.button:hover{
+    animation: colorchange .4s;
+    color: #f321d7;
+} 
+.buton{
+    color: black;
+}
+.names{
+    color: black;
+    text-align: center;
+}

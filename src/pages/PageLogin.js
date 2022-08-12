@@ -22,6 +22,7 @@ class PageLogin extends Component {
         cookies.set("email", response.email, { path: "/" });
         cookies.set("first_name", response.first_name, { path: "/" });
         cookies.set("last_names", response.last_names, { path: "/" });
+        cookies.set("group", response.group, { path: "/" });
         window.location.href = "./user";
       } else {
         this.state.form.password = "";

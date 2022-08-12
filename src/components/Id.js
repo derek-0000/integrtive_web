@@ -16,7 +16,7 @@ class Id extends Component{
   }
   render(){
   return (
-    <>
+    <div className = 'c-id'>
     <div className='background'>
         <div className='elements-container'>
             <div className='image'>                    
@@ -31,7 +31,7 @@ class Id extends Component{
             </div>
         </div>
     </div>
-    </>
+    </div>
   )
           }
 }

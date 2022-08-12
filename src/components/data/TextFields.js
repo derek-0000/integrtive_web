@@ -26,7 +26,7 @@ export const TextFields=[
         containerClassName:'txt-group c-txt-field',
         className:'group txt-field',
         label:'Group',
-        data:`${data.id + "addgroup"}`
+        data:`${data.group}`
     },
     {
         containerClassName:'txt-carrer c-txt-field',

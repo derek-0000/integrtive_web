@@ -39,14 +39,17 @@ class StudentAtendance extends Component {
   };
   render() {
     return (
-      <div className="main">
+      <div className="mainAtt">
         <div className="title">
           {cookies.get("first_name") +
             " " +
             cookies.get("last_names") +
             "'s" +
-            " Atendance"}
+            " Attendance"}
         </div>
+        <div className="second-grid-elements">
+              <div className="date grid-element">Total atendances: {this.state.positiveDates.length}</div>
+            </div>
         <div className="c-grid">
           <div className="grid">
             {this.state.dates.map((date) => {
@@ -64,9 +67,7 @@ class StudentAtendance extends Component {
                 </>
               );
             })}
-            <div className="second-grid-elements">
-              <div className="date grid-element">Total atendances: {this.state.positiveDates.length}</div>
-            </div>
+
           </div>
         </div>
       </div>

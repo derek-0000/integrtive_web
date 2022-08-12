@@ -1,3 +1,6 @@
+.c-id{
+    z-index: -1;
+}
 .image{
     margin: 10px;
     text-align: center;
@@ -5,7 +8,6 @@
 }
 .student-pic{
     border-radius: 100%;
-
 }
 .background{
     position: relative;
